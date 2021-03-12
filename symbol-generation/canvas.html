@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body {
+            font-size: 100%;
+            font-family: verdana, helvetica, arial, sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        var element;
+        function cnvs_getCoordinates(e) {
+            getElement();
+            element.innerHTML = "Coordinates:(" + e.clientX + "," + e.clientY + ")";
+        }
+        function cnvs_clearCoordinates() {
+            getElement();
+            element.innerHTML = "";
+        }
+        function getElement() {
+            if (element == null) {
+                element = document.getElementById("xycoordinates");
+            }
+        }
+    </script>
+
+</head>
+
+<body style="margin:20px;padding:20px">
+    <p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+    <div id="coordiv" style="float:center;width:500px;height:250px;border:4px solid #666666" onmousemove="cnvs_getCoordinates(event)"
+        onmouseout="cnvs_clearCoordinates()"></div>
+    <br />
+    <div id="xycoordinates"></div>
+    <canvas id="myCanvas" height="250px" width="500px" style="border:4px solid #666666;">
+        您的浏览器不支持 【canvas】 元素.
+    </canvas>
+</body>
+<script type="text/javascript">
+        var c = document.getElementById("myCanvas");
+        var cxt = c.getContext("2d");
+        cxt.fillStyle = "#FF0000";
+        cxt.moveTo(10, 10);
+        cxt.lineTo(10, 150);
+        cxt.lineTo(150, 150);
+        cxt.stroke();
+        cxt.beginPath();
+        cxt.arc(170, 58, 50, 0, Math.PI * 2, true);
+        cxt.closePath();
+        cxt.fill();
+
+        var grd = cxt.createLinearGradient(0, 0, 175, 50);
+        grd.addColorStop(0, "#FF0000");
+        grd.addColorStop(1, "#00FF00");
+        cxt.fillStyle = grd;
+
+        cxt.fillRect(10, 20, 175, 50);
+
+</script>
+
+</html>

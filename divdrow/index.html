@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("./images/background.jpg");
+        }
+
+        div.all {
+            width: 320px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: royalblue;
+            background-clip:content-box,padding-box; 
+        }
+        div.man{
+            margin-top: 80px;
+            margin-left: 30%;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            border: 20px solid  seagreen;
+            left:500px;    /* 定位父级的50% */
+            top:500px;
+        }
+        .tr01{
+            margin-top: 110px;
+            margin-left: -40px;
+            transform:rotate(135deg);
+
+        }
+        .tr02{
+            transform:rotate(45deg);
+            margin-left: 220px;
+            margin-top: -20px;
+        }
+        .tr03{
+            transform:rotate(45deg);
+            margin-left: -40px;
+            margin-top: 240px;
+        }
+        .tr04{
+            transform:rotate(135deg);
+            margin-left: 220px;
+            margin-top: -20px;
+        }
+        .tr05{
+            margin-left: 100px;
+            margin-top: -150px;
+        }
+        .tr06{
+            margin-left: 90px;
+            margin-top: -20px;
+            transform: rotate(90deg);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="man">
+        <div class="all tr01"> </div>
+        <div class="all tr02"> </div>
+        <div class="all tr03"> </div>
+        <div class="all tr04"> </div>
+        <div class="all tr05"> </div>
+        <div class="all tr06"> </div>
+    </div>
+    
+</body>
+
+</html>

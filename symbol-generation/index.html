@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--  metadata goes here   -->
+    <title>符号实体动态生成</title>
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505795288828&di=41a66f97e89adfb5fec2cdef55373fe4&imgtype=0&src=http%3A%2F%2Fm.qqzhi.com%2Fupload%2Fimg_4_456171986D2111376254_23.jpg" type="image/x-icon" />
+    <!--[if lt IE 9]>
+        <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <table id="Tab_FH"></table>
+</body>
+<script>
+    function CodingFunction() {
+        var StartTimestamp = Date.parse(new Date());
+        var strHtml = "<tr><th width=\"20%\" align=\"left\">序号</th><th width=\"30%\" align=\"left\">字符</th><th width=\"50%\" align=\"left\">实体编号</th></tr>"
+        for (var index = 0; index < 9999; index++) {
+            strHtml += "<tr><td>" + (index + 1) + "</td><td>&#" + index + ";</td><td>&amp;#" + index + ";</td></tr>";
+        }
+        document.getElementById("Tab_FH").innerHTML = strHtml;
+        document.getElementById("Tab_FH").innerText
+        var EndTimestamp = Date.parse(new Date());
+
+    }
+
+    CodingFunction();
+
+    function FunctionsErrorMsg()
+    {
+        alert(data.alert);
+    }
+    FunctionsErrorMsg();
+
+</script>
+
+</html>
