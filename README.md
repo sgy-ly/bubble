@@ -10,9 +10,9 @@
 
 # divdrow [div绘制](https://sungyzoo.github.io/bubble/divdrow/index.html)
 
-# symbol-generation [符号生成](https://sungyzoo.github.io/bubble/html5-fruit-ninja/index.html)
+# symbol-generation [符号生成](https://sungyzoo.github.io/bubble/symbol-generation/index.html)
 
-# canvas坐标 [canvas坐标](https://sungyzoo.github.io/bubble/html5-fruit-ninja/canvas.html)
+# canvas坐标 [canvas坐标](https://sungyzoo.github.io/bubble/symbol-generation/canvas.html)
 
 # html5-fruit-ninja [水果削削](https://sungyzoo.github.io/bubble/html5-fruit-ninja/index.html)
 
