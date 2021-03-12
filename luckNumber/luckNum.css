@@ -1,0 +1,54 @@
+table {
+    text-align: center;
+    font-size: 14px;
+    user-select:none;
+}
+table tr td{
+    background-color: rgb(199, 199, 199);
+    color: white;
+    min-width: 19px;
+    border-radius: 50%;
+    white-space: nowrap; 
+}
+
+table tr td:nth-child(1){
+    background-color: rgb(60, 129, 75);
+    color: white;
+    border-radius: 10%;
+}
+table tr td:nth-child(2){
+    background-color: rgb(60, 129, 75);
+    min-width: 70px;
+    color: white;
+    border-radius: 10%;
+}
+table tr td:nth-child(3){
+    background-color: white;
+}
+table tr td:nth-child(37){
+    background-color: white;
+}
+
+.cell-red-over{
+    background-color: rgb(189, 94, 94);
+}
+.cell-blue-over{
+    background-color: rgb(112, 99, 190);
+}
+
+.cell-red{
+    background-color: rgb(230 192 192);
+}
+.cell-red-select{
+    background-color:rgb(170, 1, 1);
+}
+
+.cell-blue{
+    background-color: rgb(219, 203, 234);
+}
+.cell-blue-select{
+    background-color:rgb(32, 0, 177);
+}
+
+
+
