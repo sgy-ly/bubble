@@ -35,7 +35,6 @@ table tr td:nth-child(37){
 .cell-blue-over{
     background-color: rgb(112, 99, 190);
 }
-
 .cell-red{
     background-color: rgb(229,216,216);
 }
@@ -94,10 +93,8 @@ table tr td:nth-child(37){
 .cell-red-tick16{
     background-color:#3C3C3C;
 }
-
 .cell-red-tick-max{
     background-color:#3C3C3C;
-
 }
 
 
