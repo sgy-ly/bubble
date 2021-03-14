@@ -11,6 +11,8 @@ function drowAllTable(){
     //2669
     let maxnum=1;
     let rowIndex=1;
+    var mrkObj={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:0}
+    var returnMarkObj=[];
     
 
     for (const key in numObj) {
@@ -18,6 +20,7 @@ function drowAllTable(){
             maxnum++;
             continue;
         }
+        var rowMark={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:[]};
         let tr = document.createElement("tr");
         drowCell(tr,rowIndex);
         rowIndex++;
@@ -29,12 +32,27 @@ function drowAllTable(){
             if(redNum!=7 && rowObj.r[redNum]==j){
                 value = rowObj.r[redNum];
                 redNum++;
+                rowMark.red[j]=mrkObj.red[j];
+                mrkObj.red[j]=0;
                 drowCell(tr,value,"cell-red-select");
-                continue;
+            }else{
+                mrkObj.red[j]++;
+                tt=mrkObj.red[j];
+                if(mrkObj.red[j]<10){
+                    tt="0"+(mrkObj.red[j]).toString();
+                }
+                if(mrkObj.red[j]>16){
+                    drowCell(tr,tt,"cell-red-tick-max");
+                }
+                else{
+                    drowCell(tr,tt,"cell-red-tick"+mrkObj.red[j]);
+                }
+                
+   
             }
-                drowCell(tr,value,"cell-red");
-            
+           
         }
+        returnMarkObj.push(rowMark);
         for (let j = 0; j < 17; j++) {
             let value=j;
             if(rowObj.b==j){

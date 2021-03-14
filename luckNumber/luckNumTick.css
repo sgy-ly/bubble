@@ -42,6 +42,67 @@ table tr td:nth-child(37){
 .cell-red-select{
     background-color:rgb(170, 1, 1);
 }
+
+.cell-red-tick0{
+    background-color:#FFD306;
+}
+.cell-red-tick1{
+    background-color:#FFD306;
+}
+.cell-red-tick2{
+    background-color:#FFD306;
+}
+.cell-red-tick3{
+    background-color:#FFD306;
+}
+.cell-red-tick4{
+    background-color:#00E3E3;
+}
+.cell-red-tick5{
+    background-color:#00E3E3;
+}
+.cell-red-tick6{
+    background-color:#00E3E3;
+}
+.cell-red-tick7{
+    background-color:#00E3E3;
+}
+.cell-red-tick8{
+    background-color:#921AFF;
+}
+.cell-red-tick9{
+    background-color:#921AFF;
+}
+.cell-red-tick10{
+    background-color:#921AFF;
+}
+.cell-red-tick11{
+    background-color:#921AFF;
+}
+.cell-red-tick12{
+    background-color:#3C3C3C;
+}
+.cell-red-tick13{
+    background-color:#3C3C3C;
+}
+.cell-red-tick14{
+    background-color:#3C3C3C;
+}
+.cell-red-tick15{
+    background-color:#3C3C3C;
+}
+.cell-red-tick16{
+    background-color:#3C3C3C;
+}
+
+.cell-red-tick-max{
+    background-color:#3C3C3C;
+
+}
+
+
+
+
 .cell-blue{
     background-color: rgb(231,222,239);
 }
