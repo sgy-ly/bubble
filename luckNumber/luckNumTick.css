@@ -132,8 +132,11 @@ section {
     float:left; 
 }
 .drowPalns{
+    background-color: rgb(240, 240, 240);
     width: 70px;
     right: 10px;
+    border: 2px solid rgb(185, 185, 185);
+    padding: 10px;
     position: fixed;
 }
 .drowCellFix01{
