@@ -2,6 +2,7 @@ table {
     text-align: center;
     font-size: 14px;
     user-select:none;
+    padding-bottom: 60px;
 }
 table tr td{
     background-color: rgb(199, 199, 199);
@@ -9,6 +10,9 @@ table tr td{
     min-width: 19px;
     border-radius: 50%;
     white-space: nowrap; 
+}
+table tr td:hover{
+    opacity:0.7;
 }
 
 table tr td:nth-child(1){
@@ -97,9 +101,6 @@ table tr td:nth-child(37){
     background-color:#3C3C3C;
 }
 
-
-
-
 .cell-blue{
     background-color: rgb(231,222,239);
 }
@@ -107,5 +108,78 @@ table tr td:nth-child(37){
     background-color:rgb(32, 0, 177);
 }
 
+header {
+    background-color:#087d47;
+    color:white;
+    text-align:center;
+    padding: 1px;
+    width: auto;
+    /* margin: 2px; */
+}
 
+section {
+    padding-top: 10px;
+    position:absolute;
+    width:100%;
+    height:auto;
+    top: 85px;
+    bottom:50px;                  
+}
+.redFixTable {
+    line-height:20px;
+    height: 100%;
+    width:70%;
+    float:left; 
+}
+.drowPalns{
+    width: 70px;
+    right: 10px;
+    position: fixed;
+}
+.drowCellFix01{
+    color: #FFD306;
+}
+.drowCellFix02{
+    color: #00E3E3;
+}
+.drowCellFix03{
+    color: #921AFF;
+}
+.drowCellFix04{
+    color: #3C3C3C;
+}
+.drowCellFixRed{
+    color:rgb(170, 1, 1);
+}
+.drowCellFixBlue{
+    color:rgb(32, 0, 177);
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #01cd78;
+    text-indent: .15em;
+    line-height: 1; 
+    padding: .2em;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #01cd78;
+    background-clip: content-box;
+    padding: .2em;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+body, html {
+    margin: 0px;
+}
 

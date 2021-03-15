@@ -2,12 +2,13 @@
 
 
 drowAllTable();
-var numObj=getLuckNumObj();
+// var numObj=getLuckNumObj();
+var drowColorClassName="cell-red-select";
 function drowAllTable(){
     let mark="-";
     var numTable = document.getElementById("numTable");
+    let numid;
     var numObj=getLuckNumObj();
-    let numid=21026;
     //2669
     let maxnum=1;
     let rowIndex=1;
@@ -20,6 +21,7 @@ function drowAllTable(){
             maxnum++;
             continue;
         }
+        numid=key;
         var rowMark={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:[]};
         let tr = document.createElement("tr");
         drowCell(tr,rowIndex);
@@ -68,6 +70,7 @@ function drowAllTable(){
         }
         numTable.appendChild(tr);
     }
+    numid++;
     for (let i = 0; i < 20; i++) {
         let tr = document.createElement("tr");
         let cellid=0;
@@ -102,7 +105,6 @@ function drowAllTable(){
     }
   
 }
-let buun;
 function drowCell(tr,value,classname){
     let td= document.createElement("td");
     if(classname){
@@ -115,28 +117,48 @@ function drowCell(tr,value,classname){
     tr.appendChild(td);
 }
 function cellClick(){
-    buun=this;
     if(this.cellIndex>2&&this.cellIndex<36){
-        this.className=this.className=="cell-red-select"?"cell-red":"cell-red-select";
-        overClass=null;
+        if(!overClass.hoverStyle){
+            console.log(this.className);
+            this.className=this.className=="cell-red"?drowColorClassName:"cell-red";
+            return;
+        }
+        if(overClass.oldClassName=="cell-red"){
+            this.className=overClass.className;
+        }else{
+            this.className="cell-red";
+        }
+        overClass.hoverStyle=false;
     }else{
         this.className=this.className=="cell-blue-select"?"cell-blue":"cell-blue-select";
-        overClass=null;
+        overClass.hoverStyle=false;
     }
 }
-var overClass;
+var overClass={
+    oldClassName:"",
+ className:"",
+ hoverStyle:true
+};
 function cellmouseover(){
-    overClass= this.className;
+    overClass.oldClassName=this.className;
+    overClass.className= drowColorClassName;
+    overClass.hoverStyle=true;
+    if(!(this.className=="cell-red"||this.className=="cell-blue")){
+       return;
+    }
     if(this.cellIndex>2&&this.cellIndex<36){
-        this.className="cell-red-over";
+        this.className=drowColorClassName;
     }else{
         this.className="cell-blue-over";
     }
 }
 function cellmousleave(){
-    if(overClass==null){
+    if(overClass.hoverStyle!=true){
         return;
     }
-    this.className=overClass;
+    this.className=overClass.oldClassName;
+    overClass.hoverStyle=false;
 }
-
+function inputClick(className){
+    drowColorClassName=className;
+}
