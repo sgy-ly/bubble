@@ -54,7 +54,11 @@ function drowAllTable(){
         }
         returnMarkObj.push(rowMark);
         for (let j = 0; j < 17; j++) {
-            let value=j;
+            let value="";
+            if(j<10){
+                value+="0";
+            }
+            value+=j;
             if(rowObj.b==j){
                 value=rowObj.b;
                 drowCell(tr,value,"cell-blue-select");
@@ -78,12 +82,18 @@ function drowAllTable(){
                 cellid=0;
             }
             if(j>=2&&j<36){
-                value=cellid;
+                if(j<10){
+                    value+="0";
+                }
+                value+=cellid;
                 className="cell-red";
                 cellid++;
             }else if( j>=36){
                 className="cell-blue";
-                value=cellid;
+                if(j<46){
+                    value+="0";
+                }
+                value+=cellid;
                 cellid++;
             }
             drowCell(tr,value,className);

@@ -42,9 +42,9 @@ table tr td:nth-child(37){
     background-color:rgb(170, 1, 1);
 }
 
-.cell-red-tick0{
+/* .cell-red-tick0{
     background-color:#FFD306;
-}
+} */
 .cell-red-tick1{
     background-color:#FFD306;
 }
@@ -55,7 +55,7 @@ table tr td:nth-child(37){
     background-color:#FFD306;
 }
 .cell-red-tick4{
-    background-color:#00E3E3;
+    background-color:#FFD306;
 }
 .cell-red-tick5{
     background-color:#00E3E3;
@@ -67,7 +67,7 @@ table tr td:nth-child(37){
     background-color:#00E3E3;
 }
 .cell-red-tick8{
-    background-color:#921AFF;
+    background-color:#00E3E3;
 }
 .cell-red-tick9{
     background-color:#921AFF;
@@ -79,7 +79,7 @@ table tr td:nth-child(37){
     background-color:#921AFF;
 }
 .cell-red-tick12{
-    background-color:#3C3C3C;
+    background-color:#921AFF;
 }
 .cell-red-tick13{
     background-color:#3C3C3C;
