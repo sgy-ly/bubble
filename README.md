@@ -1,6 +1,6 @@
 # luckNumber [双色球走势](https://sungyzoo.github.io/bubble/luckNumber/luckNum.html)
 
-# power [双色球走势](https://sungyzoo.github.io/bubble/power/power.html)
+# power [大数的幂指数](https://sungyzoo.github.io/bubble/power/power.html)
 
 # maerix [回旋数](https://sungyzoo.github.io/bubble/maerix/index.html)
 
