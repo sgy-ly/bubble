@@ -85,7 +85,7 @@ function drowAllTable(){
                 cellid=0;
             }
             if(j>=2&&j<36){
-                if(j<10){
+                if(j<12){
                     value+="0";
                 }
                 value+=cellid;
