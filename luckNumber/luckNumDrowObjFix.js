@@ -4,6 +4,7 @@
 drowAllTable();
 // var numObj=getLuckNumObj();
 var drowColorClassName="cell-red-select";
+var tttArr;
 function drowAllTable(){
     let mark="-";
     var numTable = document.getElementById("numTable");
@@ -14,10 +15,49 @@ function drowAllTable(){
     let rowIndex=1;
     var mrkObj={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:0}
     var returnMarkObj=[];
+    var searchArr=[];
+    var searchArrObj=[];
+    var searchObj=initSerchObj();
+    var searchlength=0;
+    function initSerchObj(){
+        var ttt={}
+        for (let i = 1; i < 34; i++) {
+            ttt[i]=0;
+        }
+        return ttt;
+    }
+    for (const key in numObj) {
+        searchlength++;
+        for (let i = 0; i < 6; i++) {
+
+            // console.log( key+"-r:"+numObj[key].r[i]);
+
+
+            if(!searchArr.includes(numObj[key].r[i])){
+                searchArr.push(numObj[key].r[i]);
+             
+            }
+            if(searchArr.includes(numObj[key].r[i])){
+                searchObj[parseInt(numObj[key].r[i])]++;
+            }
+            if(searchArr.length==33){
+                // return;
+                searchArr=[];
+                searchObj.endNo=key;
+                searchObj.leng=searchlength;
+                searchArrObj.push(searchObj);
+                searchObj=initSerchObj();
+                searchlength=0;
+            }
+        }
+    }
+    tttArr=searchArrObj;
+    console.log(searchArrObj);
+    
     
 
     for (const key in numObj) {
-        if(maxnum<2400){
+        if(maxnum<2000){
             maxnum++;
             continue;
         }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双色球-模拟</title>
+    <link rel="stylesheet" href="./luckNumTick.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Luck Number</h1>
+    </header>
+    <section>
+
+
+        <table id="numTable" class="redFixTable"></table>
+        <!-- <div class="drowPalns">
+            <input type="radio" name="RedFix" checked><div class="divFix"></div></input>
+            <input type="radio" name="RedFix"><div class="cell-red-tick1"></div></input>
+            <input type="radio" name="RedFix"><div class="cell-red-tick1"></div></input>
+            <input type="radio" name="RedFix"><div class="cell-red-tick1"></div></input>
+            <input type="radio" name="RedFix"><div class="cell-red-tick1"></input>
+        </div> -->
+        <div class="drowPalns" style="color: rgb(114, 114, 114);font-size: 20px;">
+
+            <div class="drowCellFixRed">                
+                <input type="radio" id="drowCellFixRed"  onclick="inputClick('cell-red-select')"  checked name="cellFix"/>
+                <label for="drowCellFixRed">██</label>
+            </div>
+            <!-- <div class="drowCellFixBlue">                
+                <input type="radio" id="drowCellFixBlue"  onclick="inputClick('cell-blue-select')" name="cellFix"/>
+                <label for="drowCellFixBlue">██</label>
+            </div> -->
+            <br/>
+           
+            <div class="drowCellFix01">
+                <input type="radio" id="drowCellFix01" onclick="inputClick('cell-red-tick1')" name="cellFix"/>
+                <label for="drowCellFix01" >██</label>
+            </div>
+            <div class="drowCellFix02">                
+                <input type="radio" id="drowCellFix02" onclick="inputClick('cell-red-tick5')" name="cellFix"/>
+                <label for="drowCellFix02">██</label>
+            </div>
+            <div class="drowCellFix03">                
+                <input type="radio" id="drowCellFix03" onclick="inputClick('cell-red-tick9')" name="cellFix"/>
+                <label for="drowCellFix03">██</label>
+            </div>
+            <div class="drowCellFix04">                
+                <input type="radio" id="drowCellFix04" onclick="inputClick('cell-red-tick13')" name="cellFix"/>
+                <label for="drowCellFix04">██</label>
+            </div>
+    
+        </div>
+
+    </section>
+    <!-- <script type="module" src="./luckNumDrow.js"></script> -->
+
+    <script src="../luckyNumber.js"></script>
+    <script src="./luckNumDrowObjMini.js"> </script>
+
+</body>
+
+</html>
