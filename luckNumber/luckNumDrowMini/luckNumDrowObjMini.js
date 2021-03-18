@@ -4,8 +4,13 @@
 drowAllTable();
 // var numObj=getLuckNumObj();
 var drowColorClassName = "cell-red-select";
+var ddd;
 function drowAllTable() {
-    let mark = "-";
+    var jianGe={};
+    for (let i = 1; i < 34; i++) {
+        jianGe[i]=[];
+    }
+    ddd=jianGe;
     var numTable = document.getElementById("numTable");
     let numid;
     var numObj = getLuckNumObj();
@@ -46,12 +51,7 @@ function drowAllTable() {
             }
         }
     }
-    console.log(searchArrObj);
     for (const key in numObj) {
-        if (maxnum < 2000) {
-            maxnum++;
-            continue;
-        }
         numid = key;
         var rowMark = { red: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], blue: [] };
         let tr = document.createElement("tr");
@@ -66,6 +66,11 @@ function drowAllTable() {
                 value = rowObj.r[redNum];
                 redNum++;
                 rowMark.red[j] = mrkObj.red[j];
+                let jianObj={};
+                jianObj.end=key;
+                jianObj.arr=mrkObj.red[j];
+                jianGe[j].push(jianObj);
+    
                 mrkObj.red[j] = 0;
                 drowCell(tr, value, "cell-red-select");
             } else {

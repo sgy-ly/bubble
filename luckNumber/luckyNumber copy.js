@@ -3,8 +3,6 @@
 function getLuckEveryContObj(){
     let LuckEveryObj={r:{},b:{}};
     let ballObj=getLuckBallCountObj();
-    console.log(ballObj);
-    // console.log(ballObj);
     for(key in ballObj.r){
         LuckEveryObj.r[key]={};
         let rowArry=ballObj.r[key];
@@ -12,13 +10,6 @@ function getLuckEveryContObj(){
             if(LuckEveryObj.r[key][rowArry[i].arr]==undefined){
                 LuckEveryObj.r[key][rowArry[i].arr]=0;
             }
-
-                // console.log("**************************************************");
-                // // console.log(LuckEveryObj.r[key]);
-                // console.log("球"+key);
-                // console.log("次数"+rowArry[i].arr);
-                // console.log(rowArry[i].end);
-                // // console.log(LuckEveryObj.r[key][rowArry[i].arr]);
             LuckEveryObj.r[key][rowArry[i].arr]++;
         }
     }
@@ -99,9 +90,6 @@ function getLuckNumObj() {
     var returnObj = {};
     for (let i = strnumArr.length - 1; i >= 0; i--) {
         var itemArry = strnumArr[i].split("|");
-        if(itemArry[0]<19001){
-            continue;
-        }
         returnObj[itemArry[0]] = {};
         returnObj[itemArry[0]]["r"] = [itemArry[1], itemArry[2], itemArry[3], itemArry[4], itemArry[5], itemArry[6]];
         returnObj[itemArry[0]]["b"] = itemArry[7];
