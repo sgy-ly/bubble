@@ -7,20 +7,17 @@ var drowColorClassName="cell-red-select";
 function drowAllTable(){
     let mark="-";
     var numTable = document.getElementById("numTable");
+
     let numid;
     var numObj=getLuckNumObj();
+    console.log(numObj);
     //2669
-    let maxnum=1;
     let rowIndex=1;
     var mrkObj={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:0}
     var returnMarkObj=[];
     
 
     for (const key in numObj) {
-        if(maxnum<2400){
-            maxnum++;
-            continue;
-        }
         numid=key;
         var rowMark={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:[]};
         let tr = document.createElement("tr");
