@@ -9,15 +9,10 @@ function drowAllTable(){
     var numObj=getLuckNumObj();
     let numid=21026;
     //2669
-    let maxnum=1;
     let rowIndex=1;
     
 
     for (const key in numObj) {
-        if(maxnum<2400){
-            maxnum++;
-            continue;
-        }
         let tr = document.createElement("tr");
         drowCell(tr,rowIndex);
         rowIndex++;

@@ -16,7 +16,6 @@ function drowAllTable(){
     var mrkObj={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:0}
     var returnMarkObj=[];
     
-
     for (const key in numObj) {
         numid=key;
         var rowMark={red:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],blue:[]};
