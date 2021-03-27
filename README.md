@@ -15,12 +15,3 @@
 # canvas坐标 [canvas坐标](https://sungyzoo.github.io/bubble/symbol-generation/canvas.html)
 
 # html5-fruit-ninja [水果削削](https://sungyzoo.github.io/bubble/html5-fruit-ninja/index.html)
-
-
-
-
-
-
-
-
-
