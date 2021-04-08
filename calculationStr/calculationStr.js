@@ -1,7 +1,6 @@
 // 求值的复杂表达式
 function calculationStr(str) {
     function handleCalculation(numArr, num1, num2, char) {
-        console.log("numArr=num1,num2,char",numArr,num1,num2,char);
         if (char == '+') {
             numArr.push(num1 + num2);
         } else if (char == '-') {
@@ -28,23 +27,17 @@ function calculationStr(str) {
         }
         arr.push(v);
     }
-    console.log(arr);
     let charArr = [], numArr = [];
     for (let i = 0; i < arr.length; i++) {
         if (typeof arr[i] == 'number') {
             numArr.push(arr[i]);
-            console.log("numArr",numArr);
         } else {
             if (charArr.length) {
                 // 存储字符的栈要一直出栈直到栈为空
-                console.log("--------------------------");
-                console.log("arr[i],charArr",arr[i],charArr[charArr.length - 1]);
                 while (isPop(arr[i], charArr[charArr.length - 1])) {
                     let t2 = numArr.pop();
                     let t1 = numArr.pop();
                     let char = charArr.pop();
-                    console.log("isPop-handleCalculation",numArr, t1, t2, char);
-                    console.log("#############################");
                     handleCalculation(numArr, t1, t2, char);
                 }
                 if (arr[i] == ')') {
@@ -57,7 +50,6 @@ function calculationStr(str) {
                             t2 = numArr.pop();
                             t1 = numArr.pop();
                         }
-                        // console.log("(-handleCalculation",numArr, t1, t2, char);
                         handleCalculation(numArr, t1, t2, char);
                         st = char;
                     }
@@ -71,7 +63,6 @@ function calculationStr(str) {
         }
     }
     // 最后字符栈如果还有字符，要一直出栈直到为空
-    console.log(charArr, numArr);
     while (charArr.length) {
         let t2 = numArr.pop();
         let t1 = numArr.pop();
@@ -81,4 +72,3 @@ function calculationStr(str) {
     return numArr[0];
 }
 const str = "6*(4/2*(2-2))+3*1";
-console.log('formula: ' + calculationStr(str))
