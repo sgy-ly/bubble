@@ -1,0 +1,25 @@
+.breathing-lamp-valid{
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0,
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0;
+}
+
+.breathing-lamp-invalid{
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    background: #f00;
+    box-shadow: 0 0 5px #f00,
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00;
+}

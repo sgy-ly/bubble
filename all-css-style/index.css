@@ -1,0 +1,11 @@
+.root-box{
+    display: flex;
+    margin: 50px;
+    background-color: #333333;
+    user-select: none;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+body{
+    background-color: #333333;
+}

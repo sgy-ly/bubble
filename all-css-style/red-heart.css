@@ -1,0 +1,40 @@
+
+.red-heart {
+  margin: auto;
+  background-color: rgb(248, 41, 75);
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 5px rgb(248, 41, 75),
+  0 0 0px rgb(248, 41, 75),
+  0 0 20px rgb(248, 41, 75),
+  0 0 40px rgb(248, 41, 75);
+}
+.red-heart:after {
+  background-color: rgb(248, 41, 75);
+  content: " ";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+  box-shadow: 0 0 5px rgb(248, 41, 75),
+  0 0 10px rgb(248, 41, 75),
+  0 0 20px rgb(248, 41, 75),
+  0 0 40px rgb(248, 41, 75);
+}
+.red-heart:before {
+  content: " ";
+  background-color: rgb(248, 41, 75);
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+  box-shadow: 0 0 5px rgb(248, 41, 75),
+  0 0 10px rgb(248, 41, 75),
+  0 0 20px rgb(248, 41, 75),
+  0 0 40px rgb(248, 41, 75);
+}
