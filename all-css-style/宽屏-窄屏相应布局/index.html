@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            min-width: 200px;
+            margin: 20px;
+        }
+
+        .doc-container {
+            /* border: 10px solid rgb(139, 87, 87); */
+            min-width: 200px;
+        }
+        .box1 {
+            border: 10px solid rgb(139, 87, 87);
+            display: flex;
+            flex-direction: column;
+            background-color: aquamarine;
+        }
+
+        .demo {
+            width: 100%;
+            display: flex;
+        }
+
+        .demo .item {
+            height: 50px;
+            width: 50%;
+            /* width: 100%; */
+            flex-grow: 0.5;
+            background: #444;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+
+<body class="body-color">
+    <div class="doc-container">
+        <div class="box1">
+            <div class="demo">
+                <div class="item" style="background-color: antiquewhite;">111111111111111111111111111111111111111 </div>
+                <div class="item">2222222222222222222222222222222222222222222222222222</div>
+            </div>
+            <div class="demo">
+                <div class="item">44444444444444444444444444444444444444444444444444444444444444444444444</div>
+                <div class="item">555555555555555555555555555555555555555555555555555555555555555555555555555555555555</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
