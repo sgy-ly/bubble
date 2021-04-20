@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classA{
+            color: blue;
+        }
+        .classB{
+            color: red;
+        }
+
+        p{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p class="classA classB">w dejidjieij </p>
+    <script>
+        function Foo(){
+
+        }
+        var o2 =new Foo();
+        var o1 =new Foo();
+        Foo.prototype.a=function(){
+            console.log("222222222222222222222");
+        };
+        console.log(o1.a());
+        console.log(o2.a());
+        // console.log(o2.a());
+        // console.log("***************************");
+        // Foo.prototype.a=function(){
+        //     console.log("3333333333333333333333");
+        // };
+        // console.log(o1.a());
+        // console.log(o2.a());
+        // console.log(o1);
+        // console.log(o2);
+        // console.log(o.a);
+        // console.log(o.b);
+        // console.log(o.c);
+
+        // var count=10;
+        // function a(){
+        //     return count +10;
+        // }
+
+        // function b(){
+        //     var count =20;
+        //     return a();
+        // }
+        // console.log(b());
+    </script>
+    
+</body>
+</html>
