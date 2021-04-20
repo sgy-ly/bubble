@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .base{
+            background-color: rgb(7, 131, 90);
+            border: 1px solid rgb(50, 219, 44);
+            /* height: 130px; */
+            /* overflow: hidden; */
+        }
+        .c1{
+            border: 1px solid rgb(7, 86, 204);
+            background-color: rgb(7, 86, 204);
+            height: 100px;
+            width: 200px;;
+            margin: 10px;
+            float: left;
+        }
+        .c2{
+            border: 1px solid rgb(218, 28, 176);
+            background-color:rgb(218, 28, 176) ;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            float: left;
+        }
+        .clear{ clear:both} 
+        .d1{
+            background-color: darkgreen;
+            width: 100px;
+            height: 100px;
+            float:inherit;
+        }
+        .d2{
+            background-color: rgb(16, 6, 150);
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div style="clear:left;"></div> 
+    </div>
+    <div style="border: 2px solid blue;overflow: hidden;">
+        <div class="d1"></div>
+        <div class="d2"></div>
+    </div>
+    
+</body>
+</html>
