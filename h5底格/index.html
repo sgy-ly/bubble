@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0.5px的线</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .css-div{
+            height: 501px;
+            width: 501px;
+            margin: 50px;
+        }
+
+        .css-white {
+            box-shadow: rgb(0 0 0 / 12%) 0px 2px 10px, 
+                        rgb(0 0 0 / 20%) 0px 2px 10px;
+            border-radius: 2px;
+        }
+        .css-white-g {
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
+            background-position: 20px 20px, 20px 20px, 20px 20px, 20px 20px !important;
+            background-blend-mode: difference !important;
+            background-image: linear-gradient(rgba(130, 130, 130, 0.5) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(130, 130, 130, 0.5) 1px, transparent 1px),
+                              linear-gradient(rgba(130, 130, 130, 0.25) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(130, 130, 130, 0.25) 1px, transparent 1px) !important;
+        }
+
+        .css-black {
+            box-shadow: rgb(255 255 255 / 12%) 0px 2px 10px,
+            rgb(255 255 255 / 10%) 1px 1px 15px;
+            border-radius: 2px;
+        }
+        .css-black-g {
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
+            background-position: 20px 20px, 20px 20px, 20px 20px, 20px 20px !important;
+            background-blend-mode: difference !important;
+            background-image: linear-gradient(rgba(200, 200, 200, 0.5) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(200, 200, 200, 0.5) 1px, transparent 1px),
+                              linear-gradient(rgba(200, 200, 200, 0.25) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(200, 200, 200, 0.25) 1px, transparent 1px) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="css-div css-black  css-black-g">
+
+    </div>
+</body>
+
+</html>
