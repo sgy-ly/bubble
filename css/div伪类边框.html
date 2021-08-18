@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        :root {
+            --borderColor: #757300;
+            --borderWidth:5px;
+        }
+
+        .border-radius {
+            position: relative;
+            width: 140px;
+            height: 64px;
+            margin: auto;
+            border: 1px solid #03A9F3;
+            cursor: pointer;
+        }
+
+        .border-radius::before,
+        .border-radius::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            transition: .3s ease-in-out;
+        }
+
+        .border-radius::before {
+            top: -5px;
+            left: -5px;
+            border-top: var(--borderWidth) solid var(--borderColor);
+            border-left: var(--borderWidth) solid var(--borderColor);
+        }
+
+        .border-radius::after {
+            right: -5px;
+            bottom: -5px;
+            border-bottom: var(--borderWidth) solid var(--borderColor);
+            border-right: var(--borderWidth) solid var(--borderColor);
+        }
+
+        .border-radius:hover::before,
+        .border-radius:hover::after {
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-radius">
+
+    </div>
+</body>
+
+</html>
